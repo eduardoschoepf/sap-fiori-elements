@@ -1,0 +1,19 @@
+@EndUserText.label : 'Flight persistence for Travel scenario'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #NOT_ALLOWED
+define table zfe_aflig_001023 {
+
+  key client        : mandt not null;
+  key carrier_id    : /dmo/carrier_id not null;
+  key connection_id : /dmo/connection_id not null;
+  key flight_date   : /dmo/flight_date not null;
+  @Semantics.amount.currencyCode : 'zfe_aflig_001023.currency_code'
+  price             : /dmo/flight_price;
+  currency_code     : /dmo/currency_code;
+  plane_type_id     : /dmo/plane_type_id;
+  seats_max         : /dmo/plane_seats_max;
+  seats_occupied    : /dmo/plane_seats_occupied;
+
+}
