@@ -17,7 +17,7 @@ Este repositório contém os exercícios práticos do curso **Developing and Ext
 │   │   └── ZC_Entity            # Consumption View (camada de projeções)
 │   │
 │   ├── /Behavior Definitions    # Comportamento das entidades
-│   │   └──  ZI_Entity            # Definição (CRUD, validações simples)
+│   │   └──  ZI_Entity           # Definição (CRUD, validações simples)
 │   │
 │   └── /Metadata Extensions     # Anotações UI (@UI)
 │       └── ZC_Entity            # Anotações @UI.lineItem, @UI.FieldGroup ...
