@@ -13,14 +13,14 @@ Este repositório contém os exercícios práticos do curso **Developing and Ext
 │
 ├── /Core Data Services
 │   ├── /Data Definitions        # CDS Views (Interface + Consumption)
-│   │   ├── ZI_Entity            # Interface View (camada de associações `association [0..*] to`)
-│   │   └── ZC_Entity            # Consumption View (camada de projeções)
+│   │   ├── ZI_Entity            # Interface View: encapsula as tabelas e define associações (`association [0..*] to`)
+│   │   └── ZC_Entity            # Consumption View: camada de projeção (projeta os dados para o consumo)
 │   │
-│   ├── /Behavior Definitions    # Comportamento das entidades
-│   │   └──  ZI_Entity           # Definição (CRUD, validações simples)
+│   ├── /Behavior Definitions    # Comportamento das entidades RAP
+│   │   └──  ZI_Entity           # Behavior Definition (CRUD, validações simples)
 │   │
 │   └── /Metadata Extensions     # Anotações UI (@UI)
-│       └── ZC_Entity            # Define, por meio de anotações `@UI`, como os dados serão exibidos na interface (@UI.lineItem, @UI.FieldGroup) ...
+│       └── ZC_Entity            # Define, por meio de anotações `@UI`, como os dados serão exibidos na interface (@UI.lineItem, @UI.FieldGroup, etc.)
 │
 └── /Business Services
     ├── /Service Definitions     # Exposição OData
