@@ -4,7 +4,7 @@ Este repositório contém os exercícios práticos do curso **Developing and Ext
 
 ---
 
-## 📂 Estrutura de Arquivos no ABAP Development Tools (ADT)
+## 📂 Estrutura genérica de arquivos no ABAP Development Tools (ADT)
 ```
 /sap-fiori-elements
 │
