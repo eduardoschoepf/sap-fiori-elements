@@ -4,6 +4,35 @@ Este repositório contém os exercícios práticos do curso **Developing and Ext
 
 ---
 
+## 📂 Estrutura de Arquivos no ABAP Development Tools (ADT)
+```
+/sap-fiori-elements
+│
+├── /Dictionary
+│   └── /Database Tables         # Tabelas Z* (ex: ZBOOKINGS, ZCUSTOMERS)
+│
+├── /Core Data Services
+│   ├── /Data Definitions        # CDS Views (Interface + Consumption)
+│   │   ├── ZI_Entity            # Interface View (camada de associações `association [0..*] to`)
+│   │   └── ZC_Entity            # Consumption View (camada de projeções)
+│   │
+│   ├── /Behavior Definitions    # Comportamento das entidades
+│   │   └──  ZI_Entity            # Definição (CRUD, validações simples)
+│   │
+│   └── /Metadata Extensions     # Anotações UI (@UI)
+│       └── ZC_Entity            # Anotações @UI.lineItem, @UI.FieldGroup ...
+│
+└── /Business Services
+    ├── /Service Definitions     # Exposição OData
+    │   └── ZSD_EntityService    # Exposição das CDS Views como entidades OData
+    │
+    └── /Service Bindings        # Ativação do serviço
+        └── ZSB_EntityService    # Configuração do protocolo (OData V2/V4) e tipo (UI)
+
+```
+
+---
+
 ## 🚀 Fluxo de Desenvolvimento
 
 1. **Dicionário de Dados** [`Dictionary/Database Tables/`]  
