@@ -15,19 +15,16 @@ Este repositório contém os exercícios práticos do curso **Developing and Ext
 
 3. **Behavior Definition & Implementation** [`Core Data Services/Behavior Definitions/`]  
    Define o comportamento das entidades no modelo RAP, como operações de **criação**, **leitura**, **atualização** e **exclusão** (CRUD), além de validações e regras de negócio.  
-   Inclui:
-   - Arquivos `.bdef`: definem as capacidades da entidade.
-   - Arquivos `.bimpl.abap`: implementam a lógica em ABAP (handlers).
+   Essa definição é feita diretamente no ABAP Development Tools (ADT) e associada às views CDS e tabelas.
 
 4. **Metadata Extension** [`Core Data Services/Metadata Extensions/`]  
-   Extensões de metadados com anotações `@UI` que definem como os campos serão exibidos no Fiori Elements, como:
-   - Colunas em listas (`@UI.lineItem`)
-   - Grupos e seções (`@UI.facet`)
-   - Rótulos (`@UI.label`)
-   - Campos de formulário
+   Define, por meio de anotações `@UI`, como os dados serão exibidos na interface do Fiori Elements:  
+   - Colunas em listas (`@UI.lineItem`)  
+   - Grupos e seções (`@UI.facet`)  
+   - Rótulos e descrições (`@UI.label`)
 
 5. **Service Definition & Binding** [`Business Services/`]  
-   - **Service Definition**: expõe as consumption views como entidades do serviço OData.  
+   - **Service Definition**: expõe as *consumption views* como entidades do serviço OData.  
    - **Service Binding**: conecta o serviço ao protocolo OData V4 e ativa o consumo pelas aplicações Fiori.
 
 ---
