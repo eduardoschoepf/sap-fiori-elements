@@ -9,7 +9,7 @@ Este repositório contém os exercícios práticos do curso **Developing and Ext
 /sap-fiori-elements
 │
 ├── /Dictionary
-│   └── /Database Tables         # Tabelas Z* (ex: ZBOOKINGS, ZCUSTOMERS)
+│   └── /Database Tables         # Tabelas com campos persistentes que representam as entidades de negócio
 │
 ├── /Core Data Services
 │   ├── /Data Definitions        # CDS Views (Interface + Consumption)
@@ -20,7 +20,7 @@ Este repositório contém os exercícios práticos do curso **Developing and Ext
 │   │   └──  ZI_Entity           # Definição (CRUD, validações simples)
 │   │
 │   └── /Metadata Extensions     # Anotações UI (@UI)
-│       └── ZC_Entity            # Anotações @UI.lineItem, @UI.FieldGroup ...
+│       └── ZC_Entity            # Define, por meio de anotações `@UI`, como os dados serão exibidos na interface (@UI.lineItem, @UI.FieldGroup) ...
 │
 └── /Business Services
     ├── /Service Definitions     # Exposição OData
